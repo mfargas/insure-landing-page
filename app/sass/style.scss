@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+$font-headers: 'DM Serif Display', serif;
+$font-body: 'Karla', sans-serif;
+
+$dark-violet: hsl(256, 26%, 20%);
+$off-white: hsl(0, 0%, 98%);
+$grey-blue: hsl(216, 30%, 68%);
+$grey: hsl(0, 0%, 98%);
+
 *{
     margin: 0;
     padding: 0;
@@ -6,21 +17,114 @@
 
 body{
     width: 100vw;
+    font-size: 16px;
+    font-family: $font-body;
 }
 
-nav{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+header{
+    height: 4rem;
+    justify-content: center;
+    position: relative;
+    a{
+        position: absolute;
+        top: 1rem;
+        left: 4rem;
+    }
+    nav{
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin: auto;
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 ul{ 
+    display: flex;
     li{
     list-style: none;
     }
 }
 
 section{
-    height: 100vh;
     width: 100%;
+}
+
+.intro{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: auto;
+    padding: 0;
+    background-color: $dark-violet;
+    color: $off-white;
+    img{
+        margin-bottom: -20%;
+    }
+}
+
+.intro-text{
+    width: 36rem;
+    margin: auto;
+    h1{
+        font-size: 4rem;
+        font-family: $font-headers;
+        font-weight: 400;
+    }
+}
+
+.process-details{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    h1{
+        font-family: $font-headers;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+    h2{
+        font-family: $font-headers;
+        font-weight: 400;
+        font-size: 3rem;
+        color: $off-white;
+    }
+    h3{
+        font-family: $font-headers;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    .banner{
+        background-color: $dark-violet;
+        display: flex;
+        justify-content: space-between;
+        height: 10rem;
+        button{
+            height: 3rem;
+            width: 10rem;
+            margin: auto;
+            color: $off-white;
+            border: 2px solid $off-white;
+            background-color: transparent;
+        }
+    }
+}
+
+footer{
+    background-color: $grey;
+    height: 40vh;
+    display: block;
+    ul{
+        margin: auto;
+        width: 80%;
+        justify-content: space-evenly;
+        li{
+            color: $grey-blue;
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
 }
