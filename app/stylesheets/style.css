@@ -10,6 +10,10 @@ body {
   width: 100vw;
   font-size: 16px;
   font-family: "Karla", sans-serif;
+  line-height: 2rem;
+}
+body h1, body h2, body h3 {
+  line-height: 3.5rem;
 }
 
 header {
@@ -85,10 +89,10 @@ section {
   cursor: pointer;
 }
 .intro img {
-  top: 50%;
-  left: 50%;
-  height: 75%;
+  height: 90%;
   width: auto;
+  transform: translateY(12rem);
+  margin: auto;
 }
 
 .intro-text {
@@ -109,19 +113,13 @@ section {
   justify-content: space-around;
   margin: auto;
 }
-.process-details h1 {
+.process-details .details-title {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
-}
-.process-details h2 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-size: 3rem;
-  color: #fafafa;
 }
 .process-details h3 {
   font-family: "DM Serif Display", serif;
@@ -139,6 +137,10 @@ section {
   width: 95%;
 }
 .process-details .banner h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #fafafa;
   max-width: 26.5rem;
 }
 .process-details .banner button {
@@ -157,27 +159,32 @@ section {
 
 footer {
   background-color: #fafafa;
-  height: 40vh;
   display: block;
 }
 footer a {
   text-decoration: none;
-}
-footer a:visited {
-  color: mediumslateblue;
+  color: #95a9c6;
 }
 footer .footer-header {
   width: 100%;
-  height: 3rem;
+  height: 5rem;
   align-items: center;
   justify-items: center;
   display: grid;
   grid-template-columns: 50% 50%;
 }
+footer hr {
+  width: 60%;
+  margin: auto;
+  color: #fafafa;
+}
 footer ul {
   margin: auto;
   width: 80%;
-  justify-content: space-evenly;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  justify-content: space-around;
+  text-align: left;
 }
 footer ul li {
   color: #95a9c6;
@@ -186,21 +193,70 @@ footer ul li ul {
   flex-direction: column;
 }
 
-@media screen and (min-width: 374px) and (max-width: 500px) {
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  body h1, body h2, body h3, body h4, body p {
+    max-width: 18rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  nav ul {
+    visibility: hidden;
+  }
+  nav button {
+    margin-right: auto;
+  }
+
   .intro {
     width: 100%;
     grid-template-columns: 100%;
   }
   .intro .intro-text {
     width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  .intro .intro-text h1 {
+    font-size: 2.5rem;
   }
   .intro img {
     height: auto;
-    width: 75%;
+    width: 100%;
+    grid-row: 1;
+    transform: translate(0, 0);
+  }
+  .intro button {
+    margin: auto;
+    display: block;
   }
 
+  .process-details {
+    width: 100%;
+  }
   .process-details ul {
     flex-direction: column;
+  }
+  .process-details .banner {
+    flex-direction: column;
+    width: 100%;
+    height: 30vh;
+  }
+  .process-details .banner h2 {
+    font-size: 2rem;
+    max-width: 16rem;
+    line-height: 2.5rem;
+  }
+
+  footer .footer-header {
+    grid-template-columns: 100%;
+    height: 15rem;
+  }
+  footer ul {
+    flex-direction: column;
+  }
+  footer ul li {
+    margin: auto;
+    text-align: center;
   }
 }
 
