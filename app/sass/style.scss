@@ -86,6 +86,28 @@ section{
     padding: 0;
     background-color: $dark-violet;
     color: $off-white;
+    position: relative;
+    .intro-svgs{
+        position: absolute;
+        display: inline-block;
+        z-index: 5;
+        .intro-left{
+            background-image: url('/assets/images/bg-pattern-intro-left-desktop.svg');
+            background-size: cover;
+            position: absolute;
+            height: 25rem;
+            width: auto;
+            color: $grey;
+        }
+        .intro-right{
+            background-image: url('/assets/images/bg-pattern-intro-right-desktop.svg');
+            background-size: cover;
+            position: absolute;
+            height: 25rem;
+            width: auto;
+            color: $grey;
+        }
+    }
     button{
         border: 2px solid $off-white;
         color: $off-white;
@@ -138,6 +160,9 @@ section{
     }
     ul{
         margin: auto;
+        li{
+            padding: 1rem;
+        }
     }
     .banner{
         background-color: $dark-violet;
