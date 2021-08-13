@@ -32,12 +32,16 @@
 <main>
   <section class="intro">
     <div class="intro-svgs">
-      <div class="intro-left">
-        <img src="./assets/images/bg-pattern-intro-left-desktop.svg" alt="bg">
-      </div>
-      <div class="intro-right">
-        <img src="./assets/images/bg-pattern-intro-right-desktop.svg" alt="bg2">
-      </div>
+      <picture class="intro-left">
+        <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-intro-left-desktop.svg 195w" alt="bg-left-desktop">
+        <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-intro-left-mobile.svg 168w" alt="bg-left-mobile">
+        <img src="./assets/images/bg-pattern-intro-left-desktop.svg" sizes="(max-width: 600px)">
+      </picture>
+      <picture class="intro-right">
+        <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-intro-right-desktop.svg 436w" >
+        <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-intro-right-mobile.svg 124w" >
+        <img src="./assets/images/bg-pattern-intro-right-desktop.svg" sizes="(max-width: 600px)">
+      </picture>
     </div>
     <div class="intro-text">
     <h1>Humanizing your insurance.</h1>
@@ -46,7 +50,11 @@
     and your loved ones are protected.</p>
     <button>View Plans</button>
     </div>
-    <img src="./assets/images/image-intro-desktop.jpg" class="family-image" alt="intro-family-image">
+    <picture class="intro-bg">
+      <source media="(min-width: 775px)" srcset="./assets/images/image-intro-desktop.jpg">
+      <source media="(min-width: 320px)" srcset="./assets/images/image-intro-mobile.jpg">
+      <img sizes="(max-width: 600px)" src="./assets/images/image-intro-desktop.jpg" class="family-image" alt="intro-family-image">
+    </picture>
   </section>
   <section class="process-details">
     <h2 class="details-title">We're different</h2>
@@ -78,7 +86,11 @@
   </section>
 </main>
 <footer>
-  <img src="./assets/images/bg-pattern-footer-desktop.svg" class="footer-bg" alt="footer-bg">
+  <picture class="footer-bg" alt="footer-bg">
+    <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-footer-desktop.svg 528w" >
+    <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-footer-mobile.svg 374w" >
+    <img src="./assets/images/bg-pattern-footer-desktop.svg" sizes="(max-width: 600px)">
+  </picture>
   <div class="footer-header">
     <a href="/" class="footer-logo"><img src="./assets/images/logo.svg" alt="insure-logo"></a>
     <div class="social-icons">
