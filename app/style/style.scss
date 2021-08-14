@@ -271,9 +271,9 @@ footer{
         justify-content: space-between;
         text-align: left;
         line-height: 1.5rem;
-        li.list-title{
+        li{
             padding-left: 5rem;
-            a{
+            a.list-title{
                 color: $grey-blue;
                 text-align: left;
             }
@@ -322,6 +322,7 @@ footer{
             position: absolute;
             flex-direction: column;
             display: none;
+            background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
             ul{
                 display: flex;
                 flex-direction: column;
@@ -392,13 +393,18 @@ footer{
         }
         ul.footer-nav{
             margin: auto;
+            width: 85%;
+            max-width: 100%;
             flex-direction: column;
             align-items: center;
             line-height: 2rem;
-            li.list-title{
+            li{
                 margin: auto;
                 text-align: center;
                 padding-left: 0rem;
+                a.list-title{
+                    padding-bottom: 2rem;
+                }
                 ul{
                     text-align: center;
                 }
