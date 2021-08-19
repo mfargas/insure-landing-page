@@ -99,7 +99,7 @@ section.intro{
         flex-direction: row;
         justify-content: space-between;
         z-index: 5;
-        picture.intro-left{
+        img.intro-left{
             position: absolute;
             top: 25rem;
             width: auto;
@@ -107,7 +107,7 @@ section.intro{
             color: $grey;
             margin: auto;
         }
-        picture.intro-right{
+        img.intro-right{
             position: absolute;
             right: 0rem;
             width: auto;
@@ -188,8 +188,6 @@ section.process-details{
         overflow: hidden;
         img.banner-deco{
             position: absolute;
-            height: inherit;
-            right: 15%;
             z-index: 4;
         }
         h2{
@@ -222,12 +220,10 @@ footer{
     background-color: $grey;
     display: block;
     width: 100%;
-    picture.footer-bg{
+    img.footer-bg{
         position: absolute;
-        width: 100vw;
-        img{
-            width: 100%;
-        }
+        width: auto;
+        overflow: hidden;
     }
     a{
         text-decoration: none;

@@ -122,7 +122,7 @@ section.intro .intro-svgs {
   z-index: 5;
 }
 
-section.intro .intro-svgs picture.intro-left {
+section.intro .intro-svgs img.intro-left {
   position: absolute;
   top: 25rem;
   width: auto;
@@ -131,7 +131,7 @@ section.intro .intro-svgs picture.intro-left {
   margin: auto;
 }
 
-section.intro .intro-svgs picture.intro-right {
+section.intro .intro-svgs img.intro-right {
   position: absolute;
   right: 0rem;
   width: auto;
@@ -234,8 +234,6 @@ section.process-details .banner {
 
 section.process-details .banner img.banner-deco {
   position: absolute;
-  height: inherit;
-  right: 15%;
   z-index: 4;
 }
 
@@ -274,13 +272,10 @@ footer {
   width: 100%;
 }
 
-footer picture.footer-bg {
+footer img.footer-bg {
   position: absolute;
-  width: 100vw;
-}
-
-footer picture.footer-bg img {
-  width: 100%;
+  width: auto;
+  overflow: hidden;
 }
 
 footer a {

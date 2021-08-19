@@ -32,7 +32,11 @@
 <main>
   <section class="intro">
     <div class="intro-svgs">
-      <picture class="intro-left">
+      <img sizes="(max-width: 40em) 100vw, 40vw" srcset="./assets/images/bg-pattern-intro-left-desktop.svg 195w,
+                  ./assets/images/bg-pattern-intro-left-mobile.svg 168w"  class="intro-left" alt="bg-left">
+      <img sizes="(max-width: 40em) 100vw, 35vw" srcset="./assets/images/bg-pattern-intro-right-desktop.svg 436w,
+                        ./assets/images/bg-pattern-intro-right-mobile.svg 124w" class="intro-right" alt="bg-right">
+      <!-- <picture class="intro-left">
         <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-intro-left-desktop.svg 195w" alt="bg-left-desktop">
         <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-intro-left-mobile.svg 168w" alt="bg-left-mobile">
         <img src="./assets/images/bg-pattern-intro-left-desktop.svg" sizes="(max-width: 40em) 100vw, 50vw">
@@ -41,7 +45,7 @@
         <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-intro-right-desktop.svg 436w" >
         <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-intro-right-mobile.svg 124w" >
         <img src="./assets/images/bg-pattern-intro-right-desktop.svg" sizes="(max-width: 40em) 100vw, 50vw">
-      </picture>
+      </picture> -->
     </div>
     <div class="intro-text">
     <h1>Humanizing your insurance.</h1>
@@ -79,18 +83,20 @@
       </li>
     </ul>
     <div class="banner">
-      <img src="./assets/images/bg-pattern-how-we-work-desktop.svg" class="banner-deco" alt="banner-bg">
+      <img sizes="(max-width: 45rem) 40vw, 45vw" srcset="./assets/images/bg-pattern-how-we-work-mobile.svg 176w, ./assets/images/bg-pattern-how-we-work-desktop.svg 434w" class="banner-deco" alt="banner-bg">
       <h2>Find out more about how we work</h2>
       <button>How we work</button>
     </div>
   </section>
 </main>
 <footer>
-  <picture class="footer-bg" alt="footer-bg">
+  <img sizes="(max-width: 45rem) 100vw, 35vw" srcset="./assets/images/bg-pattern-footer-mobile.svg 374w,
+            ./assets/images/bg-pattern-footer-desktop.svg 528w" class="footer-bg" alt="footer-bg">
+  <!-- <picture >
     <source media="(min-width: 775px)" srcset="./assets/images/bg-pattern-footer-desktop.svg 528w" sizes="(max-width: 40em) 100vw, 50vw">
     <source media="(min-width: 320px)" srcset="./assets/images/bg-pattern-footer-mobile.svg 374w" sizes="(max-width: 40em) 100vw, 50vw">
     <img src="./assets/images/bg-pattern-footer-desktop.svg" sizes="(max-width: 600px)">
-  </picture>
+  </picture> -->
   <div class="footer-header">
     <a href="/" class="footer-logo"><img src="./assets/images/logo.svg" alt="insure-logo"></a>
     <div class="social-icons">
