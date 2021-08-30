@@ -4,10 +4,11 @@
 $font-headers: 'DM Serif Display', serif;
 $font-body: 'Karla', sans-serif;
 
-$dark-violet: hsl(256, 26%, 20%);
-$off-white: hsl(0, 0%, 98%);
+$dark-violet: hsl(270, 9%, 17%);
+$violet: hsl(256, 26%, 20%);
+$grey-violet: hsl(273, 4%, 51%);
 $grey-blue: hsl(216, 30%, 68%);
-$grey: hsl(0, 0%, 98%);
+$off-white: hsl(0, 0%, 98%);
 
 *{
     margin: 0rem;
@@ -88,7 +89,7 @@ section.intro{
     grid-template-columns: 50% 50%;
     margin: auto;
     padding: 4rem 0 0 0;
-    background-color: $dark-violet;
+    background-color: $violet;
     color: $off-white;
     position: relative;
     .intro-svgs{
@@ -103,14 +104,14 @@ section.intro{
             top: 25rem;
             width: auto;
             max-width: 15rem;
-            color: $grey;
+            color: $off-white;
             margin: auto;
         }
         img.intro-right{
             position: absolute;
             right: 0rem;
             width: auto;
-            color: $grey;
+            color: $off-white;
             margin: auto;
         }
     }
@@ -184,7 +185,7 @@ section.process-details{
         }
     }
     .banner{
-        background-color: $dark-violet;
+        background-color: $violet;
         display: grid;
         grid-template-columns: 2fr 1fr;
         height: 10rem;
@@ -221,9 +222,10 @@ section.process-details{
 }
 
 footer{
-    background-color: $grey;
+    background-color: $off-white;
     display: block;
     width: 100%;
+    margin: 4rem auto auto auto;
     img.footer-bg{
         position: absolute;
         width: auto;
@@ -258,7 +260,7 @@ footer{
     hr{
         width: 75%;
         margin: auto;
-        color: $grey;
+        color: $off-white;
     }
     ul.footer-nav{
         margin: auto;
@@ -275,13 +277,15 @@ footer{
             a.list-title{
                 color: $grey-blue;
                 text-align: left;
+                margin: auto auto 3rem auto;
             }
             ul{
                 flex-direction: column;
+                margin: 2rem auto auto auto;
                 li{
                     padding-left: 0rem;
                     a{
-                        color: $dark-violet;
+                        color: $grey-violet;
                     }
                 }
             }
@@ -338,6 +342,7 @@ footer{
         grid-template-columns: 100%;
         .intro-text{
             width: 100%;
+            grid-row: 2;
             padding-top: 10vh;
             padding-bottom: 10vh;
             h1{
@@ -369,8 +374,7 @@ footer{
             flex-direction: column;
             width: 100%;
             height: max-content;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+            padding: 3rem 0 3rem 0;
             background-image: url(../assets/images/bg-pattern-how-we-work-mobile.svg);
             background-repeat: no-repeat;
             background-position: right;
@@ -423,6 +427,7 @@ footer{
                 }
                 ul{
                     text-align: center;
+                    margin: 2rem auto auto auto;
                 }
             }
         }
@@ -478,6 +483,7 @@ footer{
         grid-template-columns: 100%;
         .intro-text{
             width: 100%;
+            grid-row: 2;
             padding-top: 10vh;
             padding-bottom: 10vh;
             h1{
@@ -509,8 +515,7 @@ footer{
             flex-direction: column;
             width: 100%;
             height: max-content;
-            padding-top: 3rem;
-            padding-bottom: 3rem;
+            padding: 3rem 0 3rem 0;
             img.banner-deco{
                 height: 100%;
             }
@@ -555,6 +560,7 @@ footer{
                 }
                 ul{
                     text-align: center;
+                    margin: 2rem auto auto auto;
                 }
             }
         }
