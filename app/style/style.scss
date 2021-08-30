@@ -45,8 +45,7 @@ header{
         width: 100%;
         height: 100%;
         position: absolute;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-right: 10rem;
         align-items: center;
         margin: auto;
         display: flex;
@@ -88,7 +87,7 @@ section.intro{
     display: grid;
     grid-template-columns: 50% 50%;
     margin: auto;
-    padding: 0;
+    padding: 4rem 0 0 0;
     background-color: $dark-violet;
     color: $off-white;
     position: relative;
@@ -115,65 +114,70 @@ section.intro{
             margin: auto;
         }
     }
-    button{
-        border: 2px solid $off-white;
-        color: $off-white;
-        width: 8rem;
-        height: 2.5rem;
-        background-color: transparent;
-    }
-    button:hover{
-        background-color: $off-white;
-        color: $dark-violet;
-        cursor: pointer;
+    .intro-text{
+        width: 36rem;
+        height: max-content;
+        align-self: center;
+        justify-self: right;
+        margin: auto 1rem auto auto;
+        h1{
+            font-size: 4rem;
+            font-family: $font-headers;
+            font-weight: 400;
+        }
+        p{
+            margin: 2rem auto 2rem auto;
+        }
+        button{
+            border: 2px solid $off-white;
+            color: $off-white;
+            width: 8rem;
+            height: 2.5rem;
+            background-color: transparent;
+        }
+        button:hover{
+            background-color: $off-white;
+            color: $dark-violet;
+            cursor: pointer;
+        }
     }
     img.family-image{
-        height: 90%;
+        height: 100%;
         width: auto;
-        transform: translateY(12rem);
+        transform: translateY(10rem);
         margin: auto;
     }
 }
 
-.intro-text{
-    width: 36rem;
-    margin: auto;
-    h1{
-        font-size: 4rem;
-        font-family: $font-headers;
-        font-weight: 400;
-    }
-}
+
 
 section.process-details{
-    width: 80%;
+    width: 75%;
     padding-top: 10rem;
-    height: max-content;
+    height: 105vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin: auto;
     .details-title{
         font-family: $font-headers;
         font-weight: 400;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         margin-right: auto;
         margin-top: auto;
-        margin-bottom: auto;
-    }
-    h3{
-        font-family: $font-headers;
-        font-weight: 400;
-        font-size: 1.5rem;
     }
     ul{
         margin: auto;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        width: 100%;
         li{
-            padding: 1rem;
+            padding: 1.5rem;
+            width: 100%;
+            h3{
+                font-family: $font-headers;
+                font-weight: 400;
+                font-size: 1.5rem;
+                margin: 1rem auto 1rem auto;
+            }
             p{
-                max-width: 18rem;
                 line-height: 1.5rem;
                 color: $grey-blue;
             }
@@ -184,12 +188,12 @@ section.process-details{
         display: grid;
         grid-template-columns: 2fr 1fr;
         height: 10rem;
-        width: 95%;
+        width: 100%;
+        margin-bottom: auto;
         overflow: hidden;
-        img.banner-deco{
-            position: absolute;
-            z-index: 4;
-        }
+        background-image: url(../assets/images/bg-pattern-how-we-work-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: right;
         h2{
             font-family: $font-headers;
             font-weight: 400;
@@ -230,15 +234,15 @@ footer{
         color: $grey-blue;
     }
     .footer-header{
-        width: 80%;
-        height: 5rem;
+        width: 75%;
+        height: 7rem;
         margin: auto;
         align-items: center;
         display: grid;
         grid-template-columns: 50% 50%;
         a.footer-logo{
-            margin-right: 1rem;
-            justify-self: start;
+            margin-right: auto;
+            justify-self: left;
         }
         .social-icons{
             width: max-content;
@@ -247,20 +251,20 @@ footer{
             a{
                 width: max-content;
                 height: max-content;
-                margin-right: 2rem;
+                margin: auto 0.5rem;
             }
         }
     }
     hr{
-        width: 80%;
+        width: 75%;
         margin: auto;
         color: $grey;
     }
     ul.footer-nav{
-        margin-right: auto;
-        padding: 4rem;
+        margin: auto;
+        padding: 5rem 15rem 5rem 0;
         width: auto;
-        max-width: 70%;
+        max-width: 75%;
         font-family: $font-body;
         font-weight: 600;
         font-size: 1rem;
@@ -268,7 +272,6 @@ footer{
         text-align: left;
         line-height: 1.5rem;
         li{
-            padding-left: 5rem;
             a.list-title{
                 color: $grey-blue;
                 text-align: left;
@@ -286,7 +289,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 320px)
+@media screen and (min-width: 319px)
     and (max-width: 425px){
 
     body{
@@ -330,7 +333,147 @@ footer{
     }
     
     section.intro{
-        padding-top: 3.5rem;
+        padding-top: 4rem;
+        width: 100%;
+        grid-template-columns: 100%;
+        .intro-text{
+            width: 100%;
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+            h1{
+                font-size: 2.5rem;
+            }
+        }
+        img.family-image{
+            width: 100%;
+            grid-row: 1;
+            transform: translate(0,0);
+        }
+        button{
+            margin: auto;
+            display: block;
+        }
+    }
+
+    section.process-details{
+        padding-top: 10rem;
+        text-align: center;
+        width: 100%;
+        height: max-content;
+        ul{
+            margin: 4rem auto 4rem auto;
+            flex-direction: column;
+        }
+        .banner{
+            grid-template-columns: 100%;
+            flex-direction: column;
+            width: 100%;
+            height: max-content;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            background-image: url(../assets/images/bg-pattern-how-we-work-mobile.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            h2{
+                font-size: 2rem;
+                max-width: 16rem;
+                line-height: 2.5rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    footer{
+        .footer-bg{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .footer-header{
+            padding-top: 5rem;
+            grid-template-columns: 100%;
+            height: 12rem;
+            a.footer-logo{
+                margin: auto;
+            }
+            .social-icons{
+                justify-self: center;
+                a{
+                    img{
+                        margin: 1rem auto 1rem auto;
+                    }
+                }
+            }
+        }
+        ul.footer-nav{
+            margin: auto;
+            width: 100%;
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            line-height: 2rem;
+            font-weight: 600;
+            padding: 3rem 0 3rem 0;
+            li{
+                margin: auto;
+                text-align: center;
+                padding-left: 0rem;
+                a.list-title{
+                    padding-bottom: 2rem;
+                }
+                ul{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 426px)
+    and (max-width: 725px){
+
+    body{
+        h1, h2, h3, h4, p{
+            max-width: 18rem;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    header{
+        justify-content: space-between;
+        position: absolutes;
+        .logo{
+            left: 1rem;
+        }
+        button.burger{
+            display: block;
+            margin-left: auto;
+            align-self: center;
+            width: max-content;
+            height: max-content;
+            border: none;
+            color: black;
+            background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/></g></g></svg>');
+            background-size: cover;
+        }
+        nav.menu{
+            position: absolute;
+            flex-direction: column;
+            display: none;
+            background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
+            ul{
+                display: flex;
+                flex-direction: column;
+            }
+            button{
+                margin-right: auto;
+            }
+        }
+    }
+    
+    section.intro{
+        padding-top: 4rem;
         width: 100%;
         grid-template-columns: 100%;
         .intro-text{
@@ -357,6 +500,7 @@ footer{
         padding-top: 3rem;
         text-align: center;
         width: 100%;
+        height: max-content;
         ul{
             flex-direction: column;
         }
@@ -367,6 +511,9 @@ footer{
             height: max-content;
             padding-top: 3rem;
             padding-bottom: 3rem;
+            img.banner-deco{
+                height: 100%;
+            }
             h2{
                 font-size: 2rem;
                 max-width: 16rem;
@@ -386,6 +533,9 @@ footer{
             padding-top: 5rem;
             grid-template-columns: 100%;
             height: 10rem;
+            a.footer-logo{
+                margin: auto;
+            }
         }
         ul.footer-nav{
             margin: auto;
@@ -394,6 +544,8 @@ footer{
             flex-direction: column;
             align-items: center;
             line-height: 2rem;
+            font-weight: 600;
+            padding: 3rem 0 3rem 0;
             li{
                 margin: auto;
                 text-align: center;

@@ -44,8 +44,7 @@ header nav.menu {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-right: 10rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -100,7 +99,7 @@ section.intro {
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
   margin: auto;
-  padding: 0;
+  padding: 4rem 0 0 0;
   background-color: #2d2640;
   color: #fafafa;
   position: relative;
@@ -139,7 +138,30 @@ section.intro .intro-svgs img.intro-right {
   margin: auto;
 }
 
-section.intro button {
+section.intro .intro-text {
+  width: 36rem;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  margin: auto 1rem auto auto;
+}
+
+section.intro .intro-text h1 {
+  font-size: 4rem;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+section.intro .intro-text p {
+  margin: 2rem auto 2rem auto;
+}
+
+section.intro .intro-text button {
   border: 2px solid #fafafa;
   color: #fafafa;
   width: 8rem;
@@ -147,37 +169,24 @@ section.intro button {
   background-color: transparent;
 }
 
-section.intro button:hover {
+section.intro .intro-text button:hover {
   background-color: #fafafa;
   color: #2d2640;
   cursor: pointer;
 }
 
 section.intro img.family-image {
-  height: 90%;
+  height: 100%;
   width: auto;
-  -webkit-transform: translateY(12rem);
-          transform: translateY(12rem);
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
   margin: auto;
-}
-
-.intro-text {
-  width: 36rem;
-  margin: auto;
-}
-
-.intro-text h1 {
-  font-size: 4rem;
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
 }
 
 section.process-details {
-  width: 80%;
+  width: 75%;
   padding-top: 10rem;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 105vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,38 +194,35 @@ section.process-details {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   margin: auto;
 }
 
 section.process-details .details-title {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-right: auto;
   margin-top: auto;
-  margin-bottom: auto;
-}
-
-section.process-details h3 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
-  font-size: 1.5rem;
 }
 
 section.process-details ul {
   margin: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  width: 100%;
 }
 
 section.process-details ul li {
-  padding: 1rem;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+section.process-details ul li h3 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 1rem auto 1rem auto;
 }
 
 section.process-details ul li p {
-  max-width: 18rem;
   line-height: 1.5rem;
   color: #95a9c6;
 }
@@ -228,13 +234,12 @@ section.process-details .banner {
   -ms-grid-columns: 2fr 1fr;
       grid-template-columns: 2fr 1fr;
   height: 10rem;
-  width: 95%;
+  width: 100%;
+  margin-bottom: auto;
   overflow: hidden;
-}
-
-section.process-details .banner img.banner-deco {
-  position: absolute;
-  z-index: 4;
+  background-image: url(../assets/images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 section.process-details .banner h2 {
@@ -284,8 +289,8 @@ footer a {
 }
 
 footer .footer-header {
-  width: 80%;
-  height: 5rem;
+  width: 75%;
+  height: 7rem;
   margin: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -297,9 +302,9 @@ footer .footer-header {
 }
 
 footer .footer-header a.footer-logo {
-  margin-right: 1rem;
-  -ms-grid-column-align: start;
-      justify-self: start;
+  margin-right: auto;
+  -ms-grid-column-align: left;
+      justify-self: left;
 }
 
 footer .footer-header .social-icons {
@@ -320,20 +325,20 @@ footer .footer-header .social-icons a {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-right: 2rem;
+  margin: auto 0.5rem;
 }
 
 footer hr {
-  width: 80%;
+  width: 75%;
   margin: auto;
   color: #fafafa;
 }
 
 footer ul.footer-nav {
-  margin-right: auto;
-  padding: 4rem;
+  margin: auto;
+  padding: 5rem 15rem 5rem 0;
   width: auto;
-  max-width: 70%;
+  max-width: 75%;
   font-family: "Karla", sans-serif;
   font-weight: 600;
   font-size: 1rem;
@@ -342,10 +347,6 @@ footer ul.footer-nav {
           justify-content: space-between;
   text-align: left;
   line-height: 1.5rem;
-}
-
-footer ul.footer-nav li {
-  padding-left: 5rem;
 }
 
 footer ul.footer-nav li a.list-title {
@@ -368,7 +369,7 @@ footer ul.footer-nav li ul li a {
   color: #2d2640;
 }
 
-@media screen and (min-width: 320px) and (max-width: 425px) {
+@media screen and (min-width: 319px) and (max-width: 425px) {
   body h1, body h2, body h3, body h4, body p {
     max-width: 18rem;
     text-align: center;
@@ -422,7 +423,173 @@ footer ul.footer-nav li ul li a {
     margin-right: auto;
   }
   section.intro {
-    padding-top: 3.5rem;
+    padding-top: 4rem;
+    width: 100%;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  section.intro .intro-text {
+    width: 100%;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+  }
+  section.intro .intro-text h1 {
+    font-size: 2.5rem;
+  }
+  section.intro img.family-image {
+    width: 100%;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  section.intro button {
+    margin: auto;
+    display: block;
+  }
+  section.process-details {
+    padding-top: 10rem;
+    text-align: center;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  section.process-details ul {
+    margin: 4rem auto 4rem auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.process-details .banner {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-image: url(../assets/images/bg-pattern-how-we-work-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  section.process-details .banner h2 {
+    font-size: 2rem;
+    max-width: 16rem;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  footer .footer-bg {
+    width: 100%;
+  }
+  footer .footer-bg img {
+    width: 100%;
+  }
+  footer .footer-header {
+    padding-top: 5rem;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    height: 12rem;
+  }
+  footer .footer-header a.footer-logo {
+    margin: auto;
+  }
+  footer .footer-header .social-icons {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer .footer-header .social-icons a img {
+    margin: 1rem auto 1rem auto;
+  }
+  footer ul.footer-nav {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    line-height: 2rem;
+    font-weight: 600;
+    padding: 3rem 0 3rem 0;
+  }
+  footer ul.footer-nav li {
+    margin: auto;
+    text-align: center;
+    padding-left: 0rem;
+  }
+  footer ul.footer-nav li a.list-title {
+    padding-bottom: 2rem;
+  }
+  footer ul.footer-nav li ul {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 725px) {
+  body h1, body h2, body h3, body h4, body p {
+    max-width: 18rem;
+    text-align: center;
+    margin: auto;
+  }
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolutes;
+  }
+  header .logo {
+    left: 1rem;
+  }
+  header button.burger {
+    display: block;
+    margin-left: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    border: none;
+    color: black;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/></g></g></svg>');
+    background-size: cover;
+  }
+  header nav.menu {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: none;
+    background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
+  }
+  header nav.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav.menu button {
+    margin-right: auto;
+  }
+  section.intro {
+    padding-top: 4rem;
     width: 100%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -451,6 +618,9 @@ footer ul.footer-nav li ul li a {
     padding-top: 3rem;
     text-align: center;
     width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
   section.process-details ul {
     -webkit-box-orient: vertical;
@@ -472,6 +642,9 @@ footer ul.footer-nav li ul li a {
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+  section.process-details .banner img.banner-deco {
+    height: 100%;
+  }
   section.process-details .banner h2 {
     font-size: 2rem;
     max-width: 16rem;
@@ -490,6 +663,9 @@ footer ul.footer-nav li ul li a {
         grid-template-columns: 100%;
     height: 10rem;
   }
+  footer .footer-header a.footer-logo {
+    margin: auto;
+  }
   footer ul.footer-nav {
     margin: auto;
     width: 85%;
@@ -502,6 +678,8 @@ footer ul.footer-nav li ul li a {
         -ms-flex-align: center;
             align-items: center;
     line-height: 2rem;
+    font-weight: 600;
+    padding: 3rem 0 3rem 0;
   }
   footer ul.footer-nav li {
     margin: auto;
