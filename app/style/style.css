@@ -408,7 +408,7 @@ footer ul.footer-nav li ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     display: none;
-    background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
+    background-image: url("../assets/images/bg-pattern-mobile-nav.svg");
   }
   header nav.menu ul {
     display: -webkit-box;
