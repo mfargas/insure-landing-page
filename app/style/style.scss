@@ -461,7 +461,7 @@ footer{
             position: absolute;
             flex-direction: column;
             display: none;
-            background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
+            background-image: url('../assets/images/bg-pattern-mobile-nav.svg')
             ul{
                 display: flex;
                 flex-direction: column;

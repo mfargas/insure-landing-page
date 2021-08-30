@@ -574,16 +574,9 @@ footer ul.footer-nav li ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
     display: none;
-    background-image: url("/assets/images/bg-pattern-mobile-nav.svg");
-  }
-  header nav.menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    background-image: url("../assets/images/bg-pattern-mobile-nav.svg") ul;
+    background-image-display: flex;
+    background-image-flex-direction: column;
   }
   header nav.menu button {
     margin-right: auto;
