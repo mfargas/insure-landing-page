@@ -31,7 +31,7 @@ header {
 }
 
 header .logo {
-  position: absolute;
+  position: fixed;
   top: 1.5rem;
   left: 8rem;
 }
@@ -40,11 +40,11 @@ header button.burger {
   display: none;
 }
 
-header nav.menu {
+header .menu {
   width: 100%;
-  height: 100%;
-  position: absolute;
-  padding-right: 10rem;
+  position: fixed;
+  top: 1rem;
+  right: 10rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -57,19 +57,19 @@ header nav.menu {
           justify-content: flex-end;
 }
 
-header nav.menu ul li {
+header .menu ul li {
   padding-right: 2rem;
 }
 
-header nav.menu ul li a {
+header .menu ul li a {
   text-decoration: none;
 }
 
-header nav.menu ul li a:link {
+header .menu ul li a:link {
   color: #2b272f;
 }
 
-header nav.menu .plans-button {
+header .menu .plans-button {
   border: 2px solid #2b272f;
   width: 8rem;
   height: 2rem;
@@ -77,7 +77,7 @@ header nav.menu .plans-button {
   cursor: pointer;
 }
 
-header nav.menu .plans-button:hover {
+header .menu .plans-button:hover {
   background-color: #2b272f;
   color: #fafafa;
 }
@@ -389,10 +389,9 @@ footer ul.footer-nav li ul li a {
   }
   header button.burger {
     display: block;
-    margin-left: auto;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -404,16 +403,30 @@ footer ul.footer-nav li ul li a {
     background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><g fill="none" fill-rule="evenodd"><path fill="#FFF" stroke="#2C2830" stroke-width="1.5" d="M.75.75h30.5v30.5H.75z"/><g fill="#2C2830"><path d="M8 10h16v1.5H8zM8 15h16v1.5H8zM8 20h16v1.5H8z"/></g></g></svg>');
     background-size: cover;
   }
-  header nav.menu {
-    position: absolute;
+  header .menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     display: none;
+    top: 4rem;
+    right: auto;
+    height: 100%;
+    color: #fafafa;
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 4px;
+    font-weight: 700;
+    background-color: #2b272f;
     background-image: url("../assets/images/bg-pattern-mobile-nav.svg");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-  header nav.menu ul {
+  header .menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -422,8 +435,27 @@ footer ul.footer-nav li ul li a {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header nav.menu button {
-    margin-right: auto;
+  header .menu ul li {
+    margin: 2rem auto;
+    padding-right: 0;
+  }
+  header .menu ul li a {
+    color: #fafafa;
+  }
+  header .menu .plans-button {
+    margin: 1rem auto;
+    letter-spacing: 4px;
+    font-weight: 700;
+    width: 90%;
+    height: 5rem;
+    font-size: 1rem;
+    color: #fafafa;
+    border-color: #fafafa;
+  }
+  header .menuToggle {
+    display: block;
+    position: fixed;
+    z-index: 10;
   }
   section.intro {
     padding-top: 4rem;
@@ -591,6 +623,10 @@ footer ul.footer-nav li ul li a {
     width: 100%;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
+  }
+  section.intro .intro-svgs .intro-left {
+    position: fixed;
+    top: 70vh;
   }
   section.intro .intro-text {
     width: 100%;
