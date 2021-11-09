@@ -63,10 +63,15 @@ header .menu ul li {
 
 header .menu ul li a {
   text-decoration: none;
+  color: #837d87;
 }
 
 header .menu ul li a:link {
-  color: #2b272f;
+  color: #837d87;
+}
+
+header .menu ul li a:hover {
+  color: #837d87;
 }
 
 header .menu .plans-button {
@@ -121,16 +126,16 @@ section.intro .intro-svgs {
   z-index: 5;
 }
 
-section.intro .intro-svgs img.intro-left {
+section.intro .intro-svgs .intro-left {
   position: absolute;
-  top: 25rem;
+  padding: 35rem 0;
   width: auto;
   max-width: 15rem;
   color: #fafafa;
   margin: auto;
 }
 
-section.intro .intro-svgs img.intro-right {
+section.intro .intro-svgs .intro-right {
   position: absolute;
   right: 0rem;
   width: auto;
@@ -489,8 +494,10 @@ footer ul.footer-nav li ul li a {
     position: absolute;
     height: 100%;
   }
-  section.intro .intro-svgs .intro-left img {
+  section.intro .intro-svgs .intro-left {
     padding: 32rem 0;
+  }
+  section.intro .intro-svgs .intro-left img {
     z-index: 2;
   }
   section.intro .intro-svgs .intro-right img {
@@ -642,8 +649,10 @@ footer ul.footer-nav li ul li a {
         grid-template-columns: 100%;
   }
   section.intro .intro-svgs .intro-left {
-    position: fixed;
-    top: 70vh;
+    position: inherit;
+  }
+  section.intro .intro-svgs .intro-right {
+    position: inherit;
   }
   section.intro .intro-text {
     width: 100%;

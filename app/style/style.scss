@@ -56,9 +56,13 @@ header{
                 padding-right: 2rem;
                 a{
                     text-decoration: none;
+                    color: $grey-violet;
                 }
                 a:link{
-                    color: $dark-violet;
+                    color: $grey-violet;
+                }
+                a:hover{
+                    color: $grey-violet;
                 }
             }
         }
@@ -99,15 +103,15 @@ section.intro{
         flex-direction: row;
         justify-content: space-between;
         z-index: 5;
-        img.intro-left{
+        .intro-left{
             position: absolute;
-            top: 25rem;
+            padding: 35rem 0;
             width: auto;
             max-width: 15rem;
             color: $off-white;
             margin: auto;
         }
-        img.intro-right{
+        .intro-right{
             position: absolute;
             right: 0rem;
             width: auto;
@@ -391,8 +395,8 @@ footer{
             position: absolute;
             height: 100%;
             .intro-left{
+                padding: 32rem 0;
                 img{
-                    padding: 32rem 0;
                     z-index: 2;
                 }
             }
@@ -532,11 +536,10 @@ footer{
         grid-template-columns: 100%;
         .intro-svgs{
             .intro-left{
-                position: fixed;
-                top: 70vh;
+                position: inherit;
             }
             .intro-right{
-
+                position: inherit;
             }
         }
         .intro-text{
