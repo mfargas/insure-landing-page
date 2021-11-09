@@ -460,8 +460,13 @@ footer ul.footer-nav li ul li a {
   section.intro {
     padding-top: 4rem;
     width: 100%;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   section.intro .intro-text {
     width: 100%;
@@ -479,6 +484,18 @@ footer ul.footer-nav li ul li a {
     grid-row: 1;
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
+  }
+  section.intro .intro-svgs {
+    position: absolute;
+    height: 100%;
+  }
+  section.intro .intro-svgs .intro-left img {
+    padding: 32rem 0;
+    z-index: 2;
+  }
+  section.intro .intro-svgs .intro-right img {
+    padding: 60rem 0;
+    z-index: 2;
   }
   section.intro button {
     margin: auto;
